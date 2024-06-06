@@ -238,7 +238,7 @@ module.exports = client => {
         
         const songEmbed = new Discord.MessageEmbed().setColor("#2f3136")
             .setTitle(`${song.title}`)
-.setFooter({ text: `OddMusic is best right ${song.requester.tag}?`, iconURL: 'https://cdn.discordapp.com/attachments/960823554088247366/968551453050433606/OddMusic_Logo.png'})
+.setFooter({ text: `Ace Bots are the best right ${song.requester.tag}?`, iconURL: 'https://i.ibb.co/Xt65Lzv/Untitled-1.png'})
             .addField(`<:oddmu:968552025723928647> **Upload-Channel:**`, `> ${song ? `[${song.channel.name}](${song.channel.url})` : `\`Unknown\``}`, true)
             .addField(`<:odddu:968550877923258478> **Upload-At:**`, `> ${song.uploadedAt}`, true)
             .addField(`<:oddadd:968550877445099601> **Requester:**`, `> ${song.requester} \`${song.requester.tag}\``, true)
@@ -293,7 +293,7 @@ module.exports = client => {
             trackloop: false,
             queueloop: false,
             filtersChanged: false,
-            volume: 70, // queue volume, between 1 and 100
+            volume: 50, // queue volume, between 1 and 100
             tracks: [ client.createSong(song, user) ],
             previous: undefined,
             creator: user,
